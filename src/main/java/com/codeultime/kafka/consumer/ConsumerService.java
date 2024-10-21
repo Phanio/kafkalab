@@ -12,7 +12,7 @@ public class ConsumerService {
 
     private static List<String> messages = new ArrayList<>();
 
-    @KafkaListener(topics = "kafka-formation", groupId = "GROUP_KAFKALAB")
+    @KafkaListener(topics = "kafka-formation")
     public void listen(String message){
         messages.add(message);
     }
